@@ -4,7 +4,9 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
       <title>sphericle's site</title>
-    <style> 
+      <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css">
+      <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+      <style> 
         html {
     display: table-cell;
     vertical-align: middle;
@@ -14,8 +16,13 @@
 } </style>
   </head>
   <body>
-    <h1> sphericle's site
-    <h3> not sure what i'm using this for yet, but i'm sure i'll find something to make here. </h3>
-    <h3> i do have a few ideas though, stay tuned!! </h3>
-  </body>
+    <div>
+      <h1>Eon Calculator</h1>
+      <p>Calculate how long your Eon run was! </p>
+      <input type="number" name="calc" id="calc" placeholder="Run" />
+      <button py-click="runCalculate">Go!</button>
+      <div id="output"></div>
+      <script type="py" src="./main.py" config="./pyscript.json"></script>
+    </div>
+      </body>
 </html>
