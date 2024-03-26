@@ -2,7 +2,7 @@ from pyscript import document
 
 
 def runCalculate(event):
-    input_text = float(document.querySelector("#calc"))
+    input_text = float(document.querySelector("#calc")).value
     
     if input_text.value > 1:
         run = input_text.value / 100
