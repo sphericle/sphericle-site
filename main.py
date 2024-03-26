@@ -8,7 +8,7 @@ def runCalculate(event):
         floatCheck = True
     except ValueError:
         floatCheck = False
-    if floatCheck = False:
+    if floatCheck == False:
         output_div = document.querySelector("#output")
         output_div.innerText = "not a float"
     else:
