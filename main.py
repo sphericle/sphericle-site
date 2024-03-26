@@ -10,7 +10,7 @@ def runCalculate(event):
         floatCheck = False
     if floatCheck = False:
         output_div = document.querySelector("#output")
-        output_div.innerText = "test"
+        output_div.innerText = "not a float"
     else:
         if input_text.value > 1:
             run = input_text.value / 100
