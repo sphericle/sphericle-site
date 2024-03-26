@@ -2,9 +2,8 @@ from pyscript import document
 
 
 def runCalculate(event):
-    run = float()
     try:
-        float(s)
+        float(input_text)
         floatCheck = True
     except ValueError:
         floatCheck = False
