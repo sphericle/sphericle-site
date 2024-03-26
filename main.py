@@ -2,7 +2,9 @@ from pyscript import document
 
 
 input_element = document.querySelector("#calc")
-if input_element:
+output_div = document.querySelector("#output")
+
+if input_element and output_div:
     input_text = input_element.value.strip()  # Remove leading/trailing whitespace
     if input_text:  # Check if input_text is not empty
         input_number = float(input_text)
@@ -14,9 +16,8 @@ if input_element:
         else:
             run = input_number / 100
         seconds = run * 3600
-        output_div = document.querySelector("#output")
         output_div.innerText = seconds
     else:
         print("Input field value is empty")
 else:
-    print("Input element with ID 'calc' not found")
+    print("Input element or output element not found")
