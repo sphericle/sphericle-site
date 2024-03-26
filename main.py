@@ -24,4 +24,4 @@ def runCalculate(event):
         seconds = run * 3600
     
         output_div = document.querySelector("#output")
-        output_div.innerText = "test"
+        output_div.innerText = seconds
