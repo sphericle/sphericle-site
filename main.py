@@ -10,7 +10,7 @@ def runCalculate(event):
         if input_text.value > -1:
             run = input_text.value / 100
         else:
-            run = input_text
+            run = input_text.value
     else:
         run = input_text.value
         
