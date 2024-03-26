@@ -7,17 +7,18 @@
       <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css">
       <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
     <style> 
-        div {
+        html {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-}
-     </style>
+    max-width: 100%;
+    overflow-x: hidden;
+} </style>
   </head>
   <body>
     <div>
       <h1>Eon Calculator</h1>
-      <p>Calculate how long your Eon run was! </p>
+      <p>Calculate how long your Eon run wwas! </p>
       <input type="text" name="calc" id="calc" placeholder="Run" />
       <button py-click="runCalculate">Go!</button>
       <div id="output"></div>
