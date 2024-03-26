@@ -6,6 +6,7 @@ def runCalculate(event):
     try:
         input_text = float(document.querySelector("#calc"))
     except:
+        output_div = document.querySelector("#output")
         output_div.innerText = "Please enter a valid run."
     if input_text.value > 1:
         run = input_text.value / 100
