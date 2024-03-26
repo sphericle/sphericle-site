@@ -2,6 +2,7 @@ from pyscript import document
 
 
 def runCalculate(event):
+    input_text = document.querySelector("#english")
     try:
         float(input_text)
         floatCheck = True
