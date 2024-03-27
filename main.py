@@ -1,8 +1,10 @@
 from pyscript import document
 
 
-input_element = document.get_element_by_id("calc")
-output_div = document.get_element_by_id("output")
+# Assuming you have imported document from pyscript
+
+input_element = document["calc"]
+output_div = document["output"]
 
 if input_element and output_div:
     input_text = input_element.value.strip()  # Remove leading/trailing whitespace
@@ -16,7 +18,7 @@ if input_element and output_div:
         else:
             run = input_number / 100
         seconds = run * 3600
-        output_div.set_text(str(seconds))
+        output_div.text = str(seconds)
     else:
         print("Input field value is empty")
 else:
