@@ -1,1 +1,2 @@
 from pyscript import document
+
