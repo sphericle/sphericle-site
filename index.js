@@ -1,5 +1,5 @@
 function getUploadDate() {
-    random = Math.floor(Math.random() * 101);
+    let random = 50;
     let button = document.getElementById("uploadAnswer");
     let secret = document.getElementById("uploadSecret")
     if (button.style.display === "none" && secret !== 50) {
