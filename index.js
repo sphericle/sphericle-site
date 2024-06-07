@@ -1,6 +1,6 @@
 function getUploadDate() {
     let random = Math.floor(Math.random() * 26);
-    const correctNumber = 14
+    const correctNumber = 14;
     let button = document.getElementById("uploadAnswer");
     let secret = document.getElementById("uploadSecret")
     if (button.style.display === "none" && random !== correctNumber) {
