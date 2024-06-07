@@ -5,20 +5,18 @@ function getUploadDate() {
     let button = document.getElementById("uploadAnswer");
     let secret = document.getElementById("uploadSecret")
 
+    if (button.style.display === "none" && secret.style.display === "block") {
+        secret.style.display = "none";
 
-
-    if (button.style.display === "none" && random !== correctNumber) {
+    } else if (button.style.display === "none" && random !== correctNumber) {
         button.style.display = "block";
         console.log(random);
-
-    } else if (secret.style.display === "block") {
-            secret.style.display = "none";
 
             
     }else if (button.style.display === "none" && random === correctNumber) {
         secret.style.display = "block"
 
-        
+
     }  else {
         button.style.display = "none";
         secret.style.display = "none";
