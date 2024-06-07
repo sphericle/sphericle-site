@@ -1,8 +1,8 @@
 function getUploadDate() {
     let button = document.getElementById("uploadAnswer")
-    if (button.style.display === "block") {
-        button.style.display = "none";
-    } else {
+    if (button.style.display === "none") {
         button.style.display = "block";
+    } else {
+        button.style.display = "none";
     }
 }
