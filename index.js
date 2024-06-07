@@ -8,6 +8,8 @@ function getUploadDate() {
         console.log(random);
     } else if (button.style.display === "none" && random === correctNumber) {
         secret.style.display = "block"
+    } else if (secret.style.display === "block") {
+       secret.style.display = "none";
     } else {
         button.style.display = "none";
         secret.style.display = "none";
