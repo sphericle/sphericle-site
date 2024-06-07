@@ -1,2 +1,0 @@
-from pyscript import document
-
